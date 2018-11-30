@@ -7,7 +7,7 @@ app               = express()
 
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost:27017/restful_blog_app", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGOLAB_URI, { useNewUrlParser: true });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
