@@ -9,3 +9,8 @@ i.icon {
 #delete {
   display: inline;
 }
+
+i.caret {
+  position: relative;
+  top: 6px;
+}
